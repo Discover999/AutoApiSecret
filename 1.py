@@ -80,9 +80,9 @@ def main():
 
 #Server酱推送Test
 # coding=utf-8
-#import requests
-    data={'text':'Microsoft E5 api活跃提醒','desp':'调用成功'+str(num1)+'次'}
-    requests.post('https://sc.ftqq.com/SCU58642Tf1dc8ff3144c5e57b19c52e7b340b54b5d69574c963e7.send',data=data)
+import requests
+data={'text':'Microsoft E5 api活跃提醒','desp':'调用成功'+str(num1)+'次'}
+requests.post('https://sc.ftqq.com/SCU58642Tf1dc8ff3144c5e57b19c52e7b340b54b5d69574c963e7.send',data=data)
 
     except:
         print("pass")
