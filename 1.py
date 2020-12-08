@@ -80,8 +80,7 @@ def main():
 
 #Server酱推送Test
 # coding=utf-8
-        key = "SCU58642Tf1dc8ff3144c5e57b19c52e7b340b54b5d69574c963e7" #key
-        url = "https://sc.ftqq.com/%s.send"%(key)
+        url = "https://sc.ftqq.com/SCU58642Tf1dc8ff3144c5e57b19c52e7b340b54b5d69574c963e7.send"
         headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'}
 
         payload = {'text': 'Microsoft E5 api活跃提醒', 'desp': '调用成功'}
