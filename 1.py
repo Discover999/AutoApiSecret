@@ -77,6 +77,17 @@ def main():
             num1+=1
             print('10调用成功'+str(num1)+'次')
             print('此次运行结束时间为 :', localtime)
+
+#Server酱推送Test
+        api = "SCU58642Tf1dc8ff3144c5e57b19c52e7b340b54b5d69574c963e7"
+        title = "Microsoft E5 api活跃通知"
+        content = "调用成功+str(num1)+次\n此次运行结束时间为:localtime"
+        data = {
+        "text":title,
+        "desp":content
+        }
+        req = requests.post(api,data = data)
+
     except:
         print("pass")
         pass
