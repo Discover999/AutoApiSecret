@@ -1,6 +1,7 @@
 # -*- coding: UTF-8 -*-
 import requests as req
 import json,sys,time
+from requests import Session
 #先注册azure应用,确保应用有以下权限:
 #files:	Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All
 #user:	User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All
@@ -77,6 +78,11 @@ def main():
             num1+=1
             print('10调用成功'+str(num1)+'次')
             print('此次运行结束时间为 :', localtime)
+            
+        message = 'Microsoft api 调用成功'+str(num1)+'次\n\n'
+        runtime = '此次运行结束时间为 :'+localtime
+        s = Session()
+        s.get(f"https://sc.ftqq.com/SCU58642Tf1dc8ff3144c5e57b19c52e7b340b54b5d69574c963e7.send?text=1434&desp={message}{runtime}")
 
     except:
         print("pass")
