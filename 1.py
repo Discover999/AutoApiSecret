@@ -82,10 +82,12 @@ def main():
         message = 'Microsoft api 调用成功'+str(num1)+'次\n\n'
         runtime = '此次运行结束时间为 :'+localtime
         s = Session()
-        s.get(f"https://sc.ftqq.com/SCU58642Tf1dc8ff3144c5e57b19c52e7b340b54b5d69574c963e7.send?text=1434&desp={message}{runtime}")
+        s.get(f"https://sc.ftqq.com/SCU58642Tf1dc8ff3144c5e57b19c52e7b340b54b5d69574c963e7.send?text=Microsoft E5开发活跃提醒&desp={message}{runtime}")
 
     except:
         print("pass")
+        s = Session()
+        s.get(f"https://sc.ftqq.com/SCU58642Tf1dc8ff3144c5e57b19c52e7b340b54b5d69574c963e7.send?text=E5开发活跃调用失败")
         pass
 for _ in range(3):
     main()
